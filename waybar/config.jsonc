@@ -19,10 +19,8 @@
     "modules-right": [
         "pulseaudio",
         "bluetooth",
-        "network",
         "cpu",
         "memory",
-        "custom/power"
     ],
 
     "hyprland/workspaces": {
@@ -62,7 +60,7 @@
     },
 
     "cpu": {
-        "format": " {usage}%",
+        "format": " cpu {usage}%",
         "interval": 2,
         "warning-threshold": 70,
         "critical-threshold": 90,
@@ -70,7 +68,7 @@
     },
 
     "memory": {
-        "format": " {percentage}%",
+        "format": " ram {percentage}%",
         "interval": 5,
         "warning-threshold": 75,
         "critical-threshold": 90,
