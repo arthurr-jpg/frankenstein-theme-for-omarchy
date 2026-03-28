@@ -66,3 +66,14 @@ hyprctl reload
 ---
 
 [arthurr-jpg](https://github.com/arthurr-jpg)
+
+## Screenshots
+
+### Main Desktop
+![Main Desktop](screenshots/main-desktop.png)
+
+### Windows Layout
+![Windows Layout](screenshots/windows-layout.png)
+
+### Walker Menu
+![Walker Menu](screenshots/walker-menu.png)
