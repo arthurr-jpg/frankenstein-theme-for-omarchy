@@ -1,38 +1,38 @@
 {
   "placeholder": "⚡ invoke...",
-  "prompt": "",
+  "prompt": "➜ ",
   "terminal": "alacritty",
   "scrollbar_policy": "auto",
   "icons": true,
-  "icon_size": 24,
-  "max_entries": 8,
+  "icon_size": 22,
+  "max_entries": 7,
   "show_sub_text": true,
 
   "theme": {
     "name": "frankenstein",
 
-    "background":        "#141c1c",
+    "background":        "#101614",
     "border_color":      "#2a4a38",
-    "border_width":      1,
-    "border_radius":     10,
+    "border_width":      2,
+    "border_radius":     12,
     "shadow":            true,
-    "shadow_color":      "#0a1a10",
+    "shadow_color":      "#08100d",
 
-    "input_bg":          "#1a3020",
-    "input_color":       "#e8e0c8",
-    "input_placeholder": "#5a7a68",
-    "prompt_color":      "#3dd9a0",
+    "input_bg":          "#182320",
+    "input_color":       "#f2ecd9",
+    "input_placeholder": "#6f9f88",
+    "prompt_color":      "#7cffc4",
 
     "item_bg":           "#182320",
-    "item_color":        "#e8e0c8",
-    "item_active_bg":    "#3dd9a0",
-    "item_active_color": "#141c1c",
-    "item_border_radius": 6,
+    "item_color":        "#f2ecd9",
+    "item_active_bg":    "#2f5f4b",
+    "item_active_color": "#f2ecd9",
+    "item_border_radius": 8,
 
-    "sub_text_color":    "#7fd8b5",
-    "sub_text_active_color": "#141c1c",
+    "sub_text_color":    "#8fdcbb",
+    "sub_text_active_color": "#dff8ec",
 
-    "width": 620,
-    "margin_top": 160
+    "width": 640,
+    "margin_top": 120
   }
 }

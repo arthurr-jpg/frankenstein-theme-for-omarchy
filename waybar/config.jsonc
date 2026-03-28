@@ -1,6 +1,8 @@
 {
     "layer": "top",
     "position": "top",
+    "exclusive": true,
+    "passthrough": false,
     "spacing": 6,
     "height": 28,
 
@@ -77,9 +79,9 @@
 
     "network": {
         "format-wifi": " {essid}  {signalStrength}%",
-        "format-ethernet": " {ipaddr}",
+        "format-ethernet": " ethernet",
         "format-disconnected": " offline",
-        "format-linked": " {ifname} (no ip)",
+        "format-linked": " connected",
         "interval": 10
     },
 
