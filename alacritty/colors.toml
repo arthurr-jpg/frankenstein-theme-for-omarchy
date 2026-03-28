@@ -1,0 +1,40 @@
+# frankenstein — alacritty color scheme
+# arthurr-jpg
+
+[colors.primary]
+background = "#1e2424"
+foreground = "#e8e0c8"
+
+[colors.cursor]
+text   = "#1e2424"
+cursor = "#3dd9a0"
+
+[colors.selection]
+text       = "#1e2424"
+background = "#3dd9a0"
+
+[colors.normal]
+black   = "#1a3020"
+red     = "#c0392b"
+green   = "#3dd9a0"
+yellow  = "#c87820"
+blue    = "#60c8f0"
+magenta = "#8080f0"
+cyan    = "#2bc08a"
+white   = "#e8e0c8"
+
+[colors.bright]
+black   = "#2a4a38"
+red     = "#e74c3c"
+green   = "#5fffd4"
+yellow  = "#f0a030"
+blue    = "#88deff"
+magenta = "#a0a0ff"
+cyan    = "#3dd9a0"
+white   = "#f0e8d0"
+
+[colors.hints]
+start.foreground = "#1e2424"
+start.background = "#c87820"
+end.foreground   = "#1e2424"
+end.background   = "#3dd9a0"

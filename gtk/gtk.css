@@ -1,0 +1,211 @@
+/* frankenstein — gtk3 theme */
+/* arthurr-jpg */
+
+@define-color window_bg_color        #141c1c;
+@define-color window_fg_color        #e8e0c8;
+@define-color view_bg_color          #1a3020;
+@define-color view_fg_color          #e8e0c8;
+
+@define-color accent_color           #3dd9a0;
+@define-color accent_bg_color        #3dd9a0;
+@define-color accent_fg_color        #141c1c;
+
+@define-color headerbar_bg_color     #1a3020;
+@define-color headerbar_fg_color     #e8e0c8;
+@define-color headerbar_border_color #2a4a38;
+@define-color headerbar_backdrop_color #141c1c;
+@define-color headerbar_shade_color  rgba(0, 0, 0, 0.25);
+
+@define-color card_bg_color          #1a3020;
+@define-color card_fg_color          #e8e0c8;
+@define-color card_shade_color       rgba(0, 0, 0, 0.25);
+
+@define-color dialog_bg_color        #141c1c;
+@define-color dialog_fg_color        #e8e0c8;
+
+@define-color popover_bg_color       #1a3020;
+@define-color popover_fg_color       #e8e0c8;
+
+@define-color shade_color            rgba(0, 0, 0, 0.25);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+
+@define-color success_color          #3dd9a0;
+@define-color warning_color          #c87820;
+@define-color error_color            #c0392b;
+
+/* accent teal variants */
+@define-color accent_light           #5fffd4;
+@define-color accent_dim             #2bc08a;
+@define-color accent_border          #2a4a38;
+
+window, .background {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+headerbar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    border-bottom: 1px solid @headerbar_border_color;
+    border-radius: 0;
+}
+
+button {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border: 1px solid @headerbar_border_color;
+    border-radius: 4px;
+    padding: 4px 12px;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    background-color: rgba(61, 217, 160, 0.12);
+    color: @accent_color;
+    border-color: @accent_color;
+}
+
+button:active,
+button.suggested-action {
+    background-color: @accent_color;
+    color: @accent_fg_color;
+    border-color: @accent_color;
+}
+
+button.destructive-action {
+    background-color: rgba(192, 57, 43, 0.15);
+    color: #c0392b;
+    border-color: rgba(192, 57, 43, 0.4);
+}
+
+button.destructive-action:hover {
+    background-color: #c0392b;
+    color: @window_fg_color;
+}
+
+entry {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border: 1px solid @headerbar_border_color;
+    border-radius: 4px;
+    padding: 4px 8px;
+    caret-color: @accent_color;
+    transition: border-color 150ms ease;
+}
+
+entry:focus {
+    border-color: @accent_color;
+}
+
+selection,
+*:selected {
+    background-color: rgba(61, 217, 160, 0.22);
+    color: @accent_color;
+}
+
+scrollbar slider {
+    background-color: @headerbar_border_color;
+    border-radius: 6px;
+    min-width: 6px;
+    min-height: 6px;
+    transition: background-color 150ms ease;
+}
+
+scrollbar slider:hover {
+    background-color: @accent_color;
+}
+
+scrollbar trough {
+    background-color: transparent;
+}
+
+tooltip {
+    background-color: @view_bg_color;
+    color: @window_fg_color;
+    border: 1px solid @headerbar_border_color;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* links */
+*:link {
+    color: @accent_color;
+}
+
+*:visited {
+    color: @accent_dim;
+}
+
+/* progress bar */
+progressbar trough {
+    background-color: @headerbar_border_color;
+    border-radius: 4px;
+    min-height: 6px;
+}
+
+progressbar progress {
+    background-color: @accent_color;
+    border-radius: 4px;
+    min-height: 6px;
+}
+
+/* switches */
+switch {
+    background-color: @headerbar_border_color;
+    border-radius: 14px;
+    min-width: 40px;
+    min-height: 20px;
+    transition: background-color 200ms ease;
+}
+
+switch:checked {
+    background-color: @accent_color;
+}
+
+switch slider {
+    background-color: @window_fg_color;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+/* checkboxes and radios */
+check,
+radio {
+    background-color: @view_bg_color;
+    border: 1px solid @headerbar_border_color;
+    border-radius: 3px;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+check:checked,
+radio:checked {
+    background-color: @accent_color;
+    border-color: @accent_color;
+    color: @accent_fg_color;
+}
+
+/* menus */
+menu {
+    background-color: @view_bg_color;
+    border: 1px solid @headerbar_border_color;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+menuitem {
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+menuitem:hover {
+    background-color: rgba(61, 217, 160, 0.12);
+    color: @accent_color;
+}
+
+separator {
+    background-color: @headerbar_border_color;
+    min-height: 1px;
+    margin: 4px 0;
+}

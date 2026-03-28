@@ -1,0 +1,38 @@
+{
+  "placeholder": "⚡ invoke...",
+  "prompt": "",
+  "terminal": "alacritty",
+  "scrollbar_policy": "never",
+  "icons": true,
+  "icon_size": 28,
+  "max_entries": 10,
+  "show_sub_text": true,
+
+  "theme": {
+    "name": "frankenstein",
+
+    "background":        "#141c1c",
+    "border_color":      "#2a4a38",
+    "border_width":      1,
+    "border_radius":     10,
+    "shadow":            true,
+    "shadow_color":      "#0a1a10",
+
+    "input_bg":          "#1a3020",
+    "input_color":       "#e8e0c8",
+    "input_placeholder": "#2a4a38",
+    "prompt_color":      "#3dd9a0",
+
+    "item_bg":           "transparent",
+    "item_color":        "#e8e0c8",
+    "item_active_bg":    "#3dd9a022",
+    "item_active_color": "#3dd9a0",
+    "item_border_radius": 6,
+
+    "sub_text_color":    "#2bc08a",
+    "sub_text_active_color": "#2bc08a",
+
+    "width": 620,
+    "margin_top": 200
+  }
+}

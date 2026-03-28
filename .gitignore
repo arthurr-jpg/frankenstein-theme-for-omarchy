@@ -1,0 +1,17 @@
+# Backups gerados pelo install.sh
+frankenstein-backup-*/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
