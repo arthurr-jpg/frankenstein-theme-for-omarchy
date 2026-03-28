@@ -1,0 +1,104 @@
+@import "/home/arthur/.config/omarchy/current/theme/walker.css";
+
+* {
+  all: unset;
+}
+
+* {
+  font-family: monospace;
+  font-size: 18px;
+  color: @text;
+}
+
+scrollbar {
+  opacity: 1;
+}
+
+scrollbar slider {
+  background: #3dd9a0;
+  border-radius: 999px;
+  min-width: 8px;
+  min-height: 8px;
+}
+
+scrollbar trough {
+  background: alpha(@background, 0.65);
+}
+
+.normal-icons {
+  -gtk-icon-size: 16px;
+}
+
+.large-icons {
+  -gtk-icon-size: 32px;
+}
+
+.box-wrapper {
+  background:
+    linear-gradient(rgba(12, 18, 16, 0.84), rgba(12, 18, 16, 0.84)),
+    url("/home/arthur/.config/omarchy/current/theme/waybar/frankenstein.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border: 2px solid @border;
+}
+
+.search-container {
+  background: alpha(@base, 0.94);
+  padding: 10px;
+}
+
+.input placeholder {
+  opacity: 0.55;
+}
+
+.input:focus,
+.input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+child:selected .item-box {
+  background: rgba(61, 217, 160, 0.22);
+  border-radius: 8px;
+}
+
+child:selected .item-box * {
+  color: #7cffc4;
+}
+
+.item-box {
+  padding-left: 14px;
+  padding-right: 10px;
+  margin: 4px 0;
+  background: rgba(18, 28, 22, 0.52);
+  border-radius: 8px;
+}
+
+.item-text-box {
+  all: unset;
+  padding: 14px 0;
+}
+
+.item-subtext {
+  font-size: 0px;
+  min-height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-image {
+  margin-right: 14px;
+  -gtk-icon-transform: scale(0.9);
+}
+
+.current {
+  font-style: italic;
+}
+
+.keybind-hints {
+  background: alpha(@background, 0.88);
+  padding: 10px;
+  margin-top: 10px;
+}
