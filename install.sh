@@ -20,6 +20,7 @@ cp -r "$THEME_DIR"/nvim        "$OMARCHY_THEME_DIR"/
 cp -r "$THEME_DIR"/screenshots "$OMARCHY_THEME_DIR"/
 cp -r "$THEME_DIR"/walker      "$OMARCHY_THEME_DIR"/
 cp -r "$THEME_DIR"/waybar      "$OMARCHY_THEME_DIR"/
+cp "$THEME_DIR"/walker.css "$OMARCHY_THEME_DIR"/ 2>/dev/null || true
 
 cp "$THEME_DIR"/CHANGELOG.md "$OMARCHY_THEME_DIR"/ 2>/dev/null || true
 cp "$THEME_DIR"/LICENSE "$OMARCHY_THEME_DIR"/ 2>/dev/null || true
