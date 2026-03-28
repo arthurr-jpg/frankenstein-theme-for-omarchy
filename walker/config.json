@@ -2,10 +2,10 @@
   "placeholder": "⚡ invoke...",
   "prompt": "",
   "terminal": "alacritty",
-  "scrollbar_policy": "never",
+  "scrollbar_policy": "auto",
   "icons": true,
-  "icon_size": 28,
-  "max_entries": 10,
+  "icon_size": 24,
+  "max_entries": 8,
   "show_sub_text": true,
 
   "theme": {
@@ -20,19 +20,19 @@
 
     "input_bg":          "#1a3020",
     "input_color":       "#e8e0c8",
-    "input_placeholder": "#2a4a38",
+    "input_placeholder": "#5a7a68",
     "prompt_color":      "#3dd9a0",
 
-    "item_bg":           "transparent",
+    "item_bg":           "#182320",
     "item_color":        "#e8e0c8",
-    "item_active_bg":    "#3dd9a022",
-    "item_active_color": "#3dd9a0",
+    "item_active_bg":    "#3dd9a0",
+    "item_active_color": "#141c1c",
     "item_border_radius": 6,
 
-    "sub_text_color":    "#2bc08a",
-    "sub_text_active_color": "#2bc08a",
+    "sub_text_color":    "#7fd8b5",
+    "sub_text_active_color": "#141c1c",
 
     "width": 620,
-    "margin_top": 200
+    "margin_top": 160
   }
 }

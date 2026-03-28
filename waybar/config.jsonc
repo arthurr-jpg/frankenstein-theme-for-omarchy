@@ -2,6 +2,7 @@
     "layer": "top",
     "position": "top",
     "spacing": 6,
+    "height": 28,
 
     "modules-left": [
         "hyprland/workspaces",
@@ -9,7 +10,8 @@
     ],
 
     "modules-center": [
-        "clock"
+        "clock",
+        "custom/frankenstein"
     ],
 
     "modules-right": [
@@ -18,9 +20,6 @@
         "network",
         "cpu",
         "memory",
-        "temperature",
-        "battery",
-        "tray",
         "custom/power"
     ],
 
@@ -45,19 +44,19 @@
         "rewrite": {
             "(.*) — (.*)": "$1",
             "(.*) – (.*)": "$1",
-            "(.*) - (.*)":  "$1"
+            "(.*) - (.*)": "$1"
         }
     },
 
     "clock": {
-        "format": "{:%H:%M:%S · %a %d %b}",
+        "format": "{:%H:%M}",
         "interval": 1,
-        "tooltip-format": "<span size='14pt' weight='bold' color='#3dd9a0'>{:%H:%M}</span>\n<span color='#2bc08a'>{:%A, %d %B %Y}</span>\n\n<tt><small>{calendar}</small></tt>",
-        "today-format": "<span color='#3dd9a0' weight='bold' background='#1a3020'><b>{}</b></span>",
-        "calendar-weeks-pos": "left",
-        "format-calendar": "<span color='#2bc08a'>{}</span>",
-        "format-calendar-weeks": "<span color='#1e7a5a'>W{}</span>",
-        "format-calendar-weekdays": "<span color='#1e7a5a' weight='bold'>{}</span>"
+        "tooltip": false
+    },
+
+    "custom/frankenstein": {
+        "format": "frank",
+        "tooltip": false
     },
 
     "cpu": {
@@ -65,7 +64,7 @@
         "interval": 2,
         "warning-threshold": 70,
         "critical-threshold": 90,
-        "tooltip-format": "cpu: {usage}%  ·  {avg_frequency:.1f} GHz"
+        "tooltip-format": "cpu: {usage}%"
     },
 
     "memory": {
@@ -73,31 +72,7 @@
         "interval": 5,
         "warning-threshold": 75,
         "critical-threshold": 90,
-        "tooltip-format": "ram: {used:.1f} / {total:.1f} GiB  ·  swap: {swapUsed:.1f} GiB"
-    },
-
-    // temperature — thermal-zone 2 pode variar por hardware
-    // ajuste para o índice correto da sua CPU: ls /sys/class/thermal/
-    "temperature": {
-        "thermal-zone": 2,
-        "critical-threshold": 85,
-        "format": " {temperatureC}°C",
-        "format-critical": " {temperatureC}°C",
-        "tooltip-format": "temp: {temperatureC}°C"
-    },
-
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": "⚡ {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-full": " full",
-        "format-icons": [" ", " ", " ", " ", " "],
-        "interval": 30,
-        "tooltip-format": "battery: {capacity}%  ·  {time}"
+        "tooltip-format": "ram: {percentage}%"
     },
 
     "network": {
@@ -105,36 +80,32 @@
         "format-ethernet": " {ipaddr}",
         "format-disconnected": " offline",
         "format-linked": " {ifname} (no ip)",
-        "tooltip-format": "{essid}  ·  {signalStrength}%  ·  {ipaddr}\n↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
         "interval": 10
     },
 
     "bluetooth": {
-        "format": " {status}",
+        "format": " bt",
         "format-connected": " {device_alias}",
         "format-connected-battery": " {device_alias}  {device_battery_percentage}%",
         "format-disabled": " off",
         "format-off": " off",
-        "tooltip-format": "{controller_alias}  ·  {controller_address}",
-        "tooltip-format-connected": "{controller_alias}\n\n{num_connections} connected:\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "  {device_alias}",
-        "tooltip-format-enumerate-connected-battery": "  {device_alias}  ·  {device_battery_percentage}%",
+        "format-no-controller": " bt off",
         "on-click": "blueman-manager"
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": " muted",
-        "format-bluetooth": " {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
         "format-bluetooth-muted": " muted",
         "format-icons": {
-            "headphone": "",
-            "headset": "",
-            "hands-free": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "",
+            "headset": "",
+            "hands-free": "󰋎",
+            "phone": "",
+            "portable": "󰏲",
+            "car": "",
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
@@ -143,13 +114,8 @@
         "tooltip-format": "{desc}  ·  {volume}%"
     },
 
-    "tray": {
-        "icon-size": 16,
-        "spacing": 8
-    },
-
     "custom/power": {
-        "format": "",
+        "format": "⏻",
         "on-click": "wlogout",
         "tooltip": false
     }

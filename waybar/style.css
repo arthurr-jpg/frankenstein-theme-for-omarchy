@@ -14,7 +14,18 @@ window#waybar {
     border-bottom: 1px solid #2a4a38;
 }
 
-/* Workspaces */
+#custom-frankenstein {
+    min-width: 28px;
+    min-height: 20px;
+    margin: 0 4px;
+    background-image: url("/home/arthur/.config/omarchy/current/theme/waybar/frankenstein.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    font-size: 1px;
+}
+
 #workspaces button {
     padding: 0 6px;
     color: #2bc08a;
@@ -47,22 +58,19 @@ window#waybar {
     to { background-color: transparent; }
 }
 
-/* Window title */
 #window {
     color: #2bc08a;
     font-weight: bold;
     padding: 0 8px;
 }
 
-/* Clock */
 #clock {
-    padding: 0 14px;
+    padding: 0 6px 0 14px;
     color: #3dd9a0;
     font-weight: bold;
     letter-spacing: 0.04em;
 }
 
-/* CPU & Memory */
 #cpu, #memory {
     padding: 0 10px;
     color: #2bc08a;
@@ -78,39 +86,6 @@ window#waybar {
     animation: blink 0.6s step-end infinite;
 }
 
-/* Temperature */
-#temperature {
-    padding: 0 10px;
-    color: #e69050;
-    font-weight: bold;
-}
-
-#temperature.critical {
-    color: #c0392b;
-    animation: blink 0.6s step-end infinite;
-}
-
-/* Battery */
-#battery {
-    padding: 0 10px;
-    color: #2bc08a;
-    font-weight: bold;
-}
-
-#battery.charging {
-    color: #3dd9a0;
-}
-
-#battery.warning:not(.charging) {
-    color: #c87820;
-}
-
-#battery.critical:not(.charging) {
-    color: #c0392b;
-    animation: blink 0.5s step-end infinite;
-}
-
-/* Network */
 #network {
     padding: 0 10px;
     color: #60c8f0;
@@ -121,7 +96,6 @@ window#waybar {
     color: #c0392b;
 }
 
-/* Bluetooth */
 #bluetooth {
     padding: 0 10px;
     color: #8080f0;
@@ -137,7 +111,6 @@ window#waybar {
     font-weight: normal;
 }
 
-/* Audio */
 #pulseaudio {
     padding: 0 10px;
     color: #2bc08a;
@@ -149,21 +122,6 @@ window#waybar {
     font-weight: normal;
 }
 
-/* Tray */
-#tray {
-    padding: 0 8px;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    background-color: rgba(200, 120, 32, 0.2);
-    border-radius: 4px;
-}
-
-/* Power button */
 #custom-power {
     padding: 0 12px 0 8px;
     color: #c0392b;
@@ -175,7 +133,6 @@ window#waybar {
     color: #e74c3c;
 }
 
-/* Calendar tooltip */
 tooltip {
     background-color: #0e1612;
     border: 1px solid #2a4a38;
