@@ -18,7 +18,7 @@ window#waybar {
     min-width: 28px;
     min-height: 20px;
     margin: 0 4px;
-    background-image: url("/home/arthur/.config/omarchy/current/theme/waybar/frankenstein.png");
+    background-image: url("frankenstein.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

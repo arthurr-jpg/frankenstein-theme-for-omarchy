@@ -1,4 +1,4 @@
-@import "/home/arthur/.config/omarchy/current/theme/walker.css";
+@import "walker.css";
 
 * {
   all: unset;
@@ -36,7 +36,7 @@ scrollbar trough {
 .box-wrapper {
   background:
     linear-gradient(rgba(12, 18, 16, 0.84), rgba(12, 18, 16, 0.84)),
-    url("/home/arthur/.config/omarchy/current/theme/waybar/frankenstein.png");
+    url("frankenstein.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
