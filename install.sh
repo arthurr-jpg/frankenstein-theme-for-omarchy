@@ -44,3 +44,19 @@ echo "⚡ Frankenstein Theme installed in Omarchy!"
 echo "Theme dir: $OMARCHY_THEME_DIR"
 echo "Active dir: $OMARCHY_CURRENT_DIR"
 echo "Waybar log: /tmp/frankenstein-waybar.log"
+
+
+# Fix Waybar wrapper (portable)
+mkdir -p "$HOME/.config/waybar"
+
+cat > "$HOME/.config/waybar/config.jsonc" <<'EOF'
+{
+  "include": [
+    "~/.config/omarchy/current/theme/waybar/config.jsonc"
+  ]
+}
+EOF
+
+cat > "$HOME/.config/waybar/style.css" <<'EOF'
+@import "../omarchy/current/theme/waybar/style.css";
+EOF
