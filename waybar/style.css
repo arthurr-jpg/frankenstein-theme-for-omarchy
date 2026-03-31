@@ -146,3 +146,160 @@ tooltip label {
     font-weight: bold;
     padding: 4px;
 }
+
+#battery,
+#battery label,
+#battery image,
+#battery * {
+  color: #3dd9a0;
+  font-weight: bold;
+}
+
+#battery.charging,
+#battery.charging label,
+#battery.charging image,
+#battery.charging * {
+  color: #7cffc4;
+}
+
+#battery.warning:not(.charging),
+#battery.warning:not(.charging) label,
+#battery.warning:not(.charging) image,
+#battery.warning:not(.charging) * {
+  color: #e6c15a;
+}
+
+#battery.critical:not(.charging),
+#battery.critical:not(.charging) label,
+#battery.critical:not(.charging) image,
+#battery.critical:not(.charging) * {
+  color: #c0392b;
+}
+
+#battery,
+#battery label,
+#battery image,
+#battery * {
+  color: #3dd9a0;
+  font-weight: bold;
+}
+
+#battery.charging,
+#battery.charging label,
+#battery.charging image,
+#battery.charging * {
+  color: #7cffc4;
+}
+
+#battery.warning:not(.charging),
+#battery.warning:not(.charging) label,
+#battery.warning:not(.charging) image,
+#battery.warning:not(.charging) * {
+  color: #e6c15a;
+}
+
+#battery.critical:not(.charging),
+#battery.critical:not(.charging) label,
+#battery.critical:not(.charging) image,
+#battery.critical:not(.charging) * {
+  color: #c0392b;
+}
+
+#battery,
+#battery label,
+#battery image,
+#battery * {
+  color: #3dd9a0;
+  font-weight: bold;
+}
+
+#battery.charging,
+#battery.charging label,
+#battery.charging image,
+#battery.charging * {
+  color: #7cffc4;
+}
+
+#battery.warning:not(.charging),
+#battery.warning:not(.charging) label,
+#battery.warning:not(.charging) image,
+#battery.warning:not(.charging) * {
+  color: #e6c15a;
+}
+
+#battery.critical:not(.charging),
+#battery.critical:not(.charging) label,
+#battery.critical:not(.charging) image,
+#battery.critical:not(.charging) * {
+  color: #c0392b;
+}
+
+#battery,
+#battery label,
+#battery image,
+#battery * {
+  color: #3dd9a0;
+  font-weight: bold;
+}
+
+#battery.charging,
+#battery.charging label,
+#battery.charging image,
+#battery.charging * {
+  color: #7cffc4;
+}
+
+#battery.warning:not(.charging),
+#battery.warning:not(.charging) label,
+#battery.warning:not(.charging) image,
+#battery.warning:not(.charging) * {
+  color: #e6c15a;
+}
+
+#battery.critical:not(.charging),
+#battery.critical:not(.charging) label,
+#battery.critical:not(.charging) image,
+#battery.critical:not(.charging) * {
+  color: #c0392b;
+}
+
+#battery,
+#battery label,
+#battery image,
+#battery * {
+  color: #3dd9a0;
+  font-weight: bold;
+}
+
+#battery.charging,
+#battery.charging label,
+#battery.charging image,
+#battery.charging * {
+  color: #7cffc4;
+}
+
+#battery.warning:not(.charging),
+#battery.warning:not(.charging) label,
+#battery.warning:not(.charging) image,
+#battery.warning:not(.charging) * {
+  color: #e6c15a;
+}
+
+#battery.critical:not(.charging),
+#battery.critical:not(.charging) label,
+#battery.critical:not(.charging) image,
+#battery.critical:not(.charging) * {
+  color: #c0392b;
+}
+
+#battery {
+  color: #8a7cf0;
+  padding: 0 10px;
+  padding-right: 6px;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+#memory {
+  margin-right: 12px;
+}
