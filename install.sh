@@ -59,4 +59,8 @@ EOF
 
 cat > "$HOME/.config/waybar/style.css" <<'EOF'
 @import "../omarchy/current/theme/waybar/style.css";
+# Hypr compatibility shim
+mkdir -p "$OMARCHY_THEME_DIR/hypr"
+cat > "$OMARCHY_THEME_DIR/hypr/theme.conf" <<'EOF'
+source = ~/.config/omarchy/current/theme/hyprland.conf
 EOF
