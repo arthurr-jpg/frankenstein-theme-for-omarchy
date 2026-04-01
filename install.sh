@@ -10,16 +10,9 @@ echo "⚡ Installing Frankenstein Theme for Omarchy..."
 rm -rf "$OMARCHY_THEME_DIR"
 mkdir -p "$OMARCHY_THEME_DIR"
 
-cp -r "$THEME_DIR"/alacritty   "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/backgrounds "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/btop        "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/gtk         "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/hypr        "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/mako        "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/nvim        "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/screenshots "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/walker      "$OMARCHY_THEME_DIR"/
-cp -r "$THEME_DIR"/waybar      "$OMARCHY_THEME_DIR"/
+for dir in alacritty backgrounds btop gtk hypr mako nvim walker waybar; do
+  [ -d "$THEME_DIR/$dir" ] && cp -r "$THEME_DIR/$dir" "$OMARCHY_THEME_DIR"/
+done
 cp "$THEME_DIR"/walker.css "$OMARCHY_THEME_DIR"/ 2>/dev/null || true
 
 cp "$THEME_DIR"/CHANGELOG.md "$OMARCHY_THEME_DIR"/ 2>/dev/null || true
